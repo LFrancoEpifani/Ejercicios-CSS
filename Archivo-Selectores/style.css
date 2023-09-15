@@ -1,0 +1,58 @@
+*{
+    color: green;
+}
+
+p{
+    color: red;
+}
+
+#title-1{
+    color: blueviolet;
+}
+
+.bg-yellow{
+    color: yellow;
+}
+
+a[href="https://www.yahoo.com"]
+{
+    color: black;
+}
+
+.title{
+    color: cadetblue;
+}
+
+a[href*=".com"]{
+    color: aqua;
+}
+
+.title,
+.title-1,
+.title-2{
+    color: tomato;
+}
+
+a[href*='127']{
+    color: rgb(0, 0, 0);
+}
+
+a[href^="https"]{
+    color: blue;
+}
+
+a,p,h1{
+    background-color: aquamarine;
+}
+
+main p{
+    color: coral;
+}
+
+h1 + p{
+    color: rgb(0, 0, 0);
+}
+
+main{
+    background-color: darkgray;
+}

@@ -1,0 +1,22 @@
+*{
+    background-color: aqua;
+}
+
+.contenedor{
+    background-color: blue;
+}
+
+.contenedor a{
+    background-color: red;
+}
+
+h1{
+    color: black !important;
+    background-color: blueviolet;
+}
+
+#titulo{
+    background-color: cadetblue;
+}
+
+

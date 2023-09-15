@@ -1,0 +1,19 @@
+
+.contenedor{
+    background-color: blanchedalmond;
+}
+
+.contenedor h1{
+    color: red;
+}
+
+ .contenedor h1:hover{
+    color: blue;
+    
+}
+
+.columnas{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 5px outset red;
+}
