@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            width: 100%;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+        .header{
+            background-color: black;
+            height: 40px;
+        }
+        .menu{
+            background-color: red;
+            grid-column: 2 / 4;
+            height: 40px;
+        }
+        .hero{
+            background-color: rgb(66, 142, 248);
+            grid-column: 1/4;
+            height: 150px;
+        }
+        .main{
+            background-color: rgb(13, 28, 78);
+            grid-column: 1 / 2;
+            grid-row: 3 / 5;
+            height: 120px;
+        }
+        .image{
+            background-color: rgb(147, 219, 248);
+            grid-column: 3/4;
+        }
+        .extra{
+            background-color: rgb(36, 116, 91);
+            grid-column: 3/4;
+        }
+        .banner{
+            grid-column: 1 / 4;
+            height: 40px;
+            background-color: rgb(241, 241, 140);
+        }
+
+
+        @media screen and (max-width: 768px) {
+            
+            .all {
+                margin: 0;
+                padding: 0;
+        }
+        .header{
+            background-color: black;
+            height: 10vh;
+            grid-column: 1 / 4;
+        }
+        .menu{
+            background-color: red;
+            grid-column: 1 / 2;
+           grid-row: 3 / 6;
+           height: 100vh;
+        }
+        .hero{
+            background-color: rgb(66, 142, 248);
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            height: 10vh;
+        }
+        .main{
+            background-color: rgb(13, 28, 78);
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            height: 40vh;
+        }
+        .image{
+            height: 40vh;
+          grid-column: 2 / 3;
+            background-color: rgb(147, 219, 248);
+            
+        }
+        .extra{
+            height: 40vh;
+            grid-column: 3 / 4;
+            background-color: rgb(36, 116, 91);
+            
+        }
+        .banner{
+           grid-column: 2 / 4;
+           grid-row: 4 / 5;
+           height: 20vh;
+            background-color: rgb(241, 241, 140);
+        }
+
+        }
+        @media screen and (max-width: 468px) {
+            
+            
+        .header{
+            background-color: black;
+            height: 10vh;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+        .menu{
+            background-color: red;
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            height: 10vh;
+            z-index: 1;
+        }
+        .hero{
+            background-color: rgb(66, 142, 248);
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            height: 30vh;
+        }
+        .main{
+            background-color: rgb(13, 28, 78);
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+            height: 20vh;
+        }
+        .image{
+            grid-row: 7 / 8;
+            grid-column: 1 / 4;
+            background-color: rgb(147, 219, 248);
+            height: 10vh;
+        }
+        .extra{
+            
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
+            background-color: rgb(36, 116, 91);
+            height: 10vh;
+        }
+        .banner{
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+            height: 10vh;
+            background-color: rgb(241, 241, 140);
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <div class="header">HEADER</div>
+    <div class="menu">MENU</div>
+    <div class="hero">HERO</div>
+    <div class="main">MAIN</div>
+    <div class="image">IMAGE</div>
+    <div class="extra">EXTRA</div>
+    <div class="banner">BANNER</div>
+    </div>
+</body>
+</html>
