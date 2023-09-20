@@ -1,0 +1,235 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
+
+/* GENERALES */
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0 0 1rem;
+}
+
+.encabezado img{
+    height: 30px;
+    width: 100px;
+}
+
+
+.navegacion ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navegacion ul li{
+    list-style: none;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido-principal{
+    background-image: url(/lab-css-spotify-clone/images/landing.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido-principal {
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CONTENIDO SECUNDARIO */ 
+
+.contenido-secundario{
+    padding-bottom: 100px;
+}
+
+.contenido-secundario h2{
+        text-align: center;
+}
+
+.contenido-secundario img{
+    width: auto;
+    height: 80px;
+}
+
+.grid h3{
+    color: #00B172;
+ }
+
+
+.grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+
+.informacion{
+    background-color: #00B172 ;
+}
+
+.informacion h2 span{
+    border-bottom: 3px solid white;
+}
+
+.informacion h2{
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.contenedor-final{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.contenido{
+    width: 250px;
+    height: 450px;
+}
+
+.info-principal{
+    padding: 2em;
+}
+
+.imagenes{
+    display: flex;
+}
+
+.search,
+.discover,
+.browse{
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contenido-principal{
+        background-image: url(/lab-css-spotify-clone/images/landing.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    
+    .navegacion ul{
+        display: block;
+
+    }
+
+    .navegacion li{
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor-final{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-final img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search,
+    .discover,
+    .browse{
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .contenedor-final{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo h2{
+        font-size: 2.5rem;
+    }
+
+    .info-principal h3{
+        font-size: 2rem;
+    }
+    .info-principal p{
+        font-size: 1.3rem;
+    }
+
+    .contenedor-final img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .informacion{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
