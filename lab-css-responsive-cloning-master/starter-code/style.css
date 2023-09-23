@@ -1,0 +1,418 @@
+/* Reset de estilos */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+.all{
+  color: #ffffff;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  padding: 0rem 12rem;
+  box-shadow: 0px 8px 2px -6px rgba(181, 181, 181, 1);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.encabezado-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.buscador {
+  color: #b6b4b4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.buscador input {
+  border: solid 0.1px #b6b4b4;
+  background: url(./images/search.png) no-repeat start;
+  text-align: start;
+  width: 100%;
+  padding: 0.2rem;
+  text-indent: 1.5rem;
+}
+
+.buscador input::placeholder {
+  color: #d0d0d0;
+}
+
+.buscador p {
+  font-size: 0.8rem;
+}
+
+/* NAVEGACION */
+.navegacion ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.8rem;
+  margin-right: 2rem;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+
+.navegacion ul img {
+  width: 15px;
+}
+
+.navegacion ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navegacion ul li:first-child {
+  background-color: #ebebeb;
+  padding: 0.8rem;
+}
+
+.navegacion ul li:not(:first-child) a {
+  color: #c4c3c3;
+}
+
+/* WELCOME */
+.welcome {
+  border: solid 0.1px #ededed;
+  margin: 3rem 12rem;
+  padding: 1rem;
+}
+
+.welcome-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.welcome-contenedor h4{
+  font-size: 1rem;
+}
+
+.welcome-contenedor span {
+  font-size: 0.8rem;
+  color: #c9c8c8;
+}
+
+.welcome-contenedor input {
+  padding: 0.4rem;
+  border: solid 0.1px #ededed;
+}
+
+.welcome-contenedor input::placeholder {
+  color: #ededed;
+}
+
+.welcome-contenedor button {
+  padding: 0.5rem;
+  background-color: #d6573d;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.welcome-contenedor a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.close img {
+  margin-left: 5rem;
+  width: 15px;
+}
+
+/* POPULARES */
+.popular {
+  width: 50%;
+  padding: 1rem;
+  border: solid 0.1px #ededed;
+  margin: 0rem 2rem;
+}
+
+.titulo-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-popular h4 {
+  margin-left: 2rem;
+}
+
+.titulo-popular img {
+  margin-right: 2rem;
+  width: 15px;
+}
+
+.populares {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* DUOLINGO */
+.duolingo {
+  display: flex;
+  gap: 1rem;
+}
+
+.botones {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.populares p {
+  font-size: 0.8rem;
+}
+
+.botones button {
+  border: solid 0.1px black;
+  text-indent: 30%;
+  width: 50px;
+  height: 20px;
+}
+
+.popularidad, .dispositivo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vote, .comentario {
+  background-repeat: no-repeat;
+  background-position: start;
+}
+
+/* TRIBE */
+h3, p {
+  margin: 8px;
+}
+
+.populares img {
+  margin-left: 2rem;
+  object-fit: contain;
+}
+
+.tribe {
+  display: flex;
+  gap: 1rem;
+}
+
+/* SLACK */
+.popular-slack {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  margin: 1rem;
+}
+
+.kitty-slack {
+  padding: 1rem;
+  border: solid 0.1px #ededed;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.titulo-slack h4 {
+  margin-bottom: 0.7rem;
+}
+
+.kitty-slack p {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+}
+
+
+.slack {
+  padding: 1rem;
+  border: solid 0.1px #ededed;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.titulo-slack img {
+  width: 12px;
+  height: 12px;
+}
+
+.titulo-slack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  margin: 0.7rem;
+  padding: 0.5rem;
+  background-color: #d6573d;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.btn a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #b1b1b1;
+  margin-top: 2rem;
+  gap: 0.7rem;
+}
+
+.show-more h3 {
+  margin: 0;
+}
+
+.show-more img {
+  margin: 0;
+}
+
+/* UPCOMING */
+.slack h2 {
+  text-indent: 3%;
+  font-size: 0.7rem;
+}
+
+.imagen img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+ 
+.personas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.persona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion h3 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.informacion p {
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+.btn-remind {
+  background: none;
+  border: solid 0.1px black;
+  margin-bottom: 0.6rem;
+}
+
+.btn-remind a {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+.see {
+  text-align: center;
+  color: #d6573d;
+}
+
+
+.today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TWITTER */
+
+.twitter{
+  padding: 1rem;
+  height: 30vh;
+  border: solid 0.1px #ededed;
+}
+
+.titulo-twitter{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.titulo-twitter h4{
+  font-size: 1.4rem;
+}
+
+.titulo-twitter p{
+  font-size: 0.7rem;
+}
+
+.product{
+  margin-top: 0;
+  color: rgb(96, 221, 243);
+}
+
+.imagen-twitter img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.imagen-twitter{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.contenido-twitter{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.contenido-twitter h6, p{
+  margin: 0;
+}
+
+.contenido-twitter h6{
+  font-size: 0.8rem;
+}
+
+.contenido-twitter p{
+  font-size: 0.7rem;
+}
+
+.contenido-twitter{
+  margin-bottom: 0.8rem;
+}
